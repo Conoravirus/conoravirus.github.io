@@ -444,7 +444,7 @@ function autoLink(str, elem) {
       target = "_self";
     } else if (m[5]) {  // User name
       text = m[5];
-      url = "http://twitter.com/" + text.replace(/^@/, "");
+      url = "https://twitter.com/" + text.replace(/^@/, "");
       target = "_blank";
     } else if (m[2]) {  // URL
       text = m[2];
