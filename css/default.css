@@ -1,0 +1,238 @@
+/*
+  Copyright: Hiroshi Ichikawa <http://gimite.net/en/>
+  License: New BSD License
+*/
+
+body {
+  font-size: 95%;
+    color: #000;
+}
+
+h1 {
+  font-size: 150%;
+    color: #000;
+}
+
+a {
+  text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
+img {
+  border: 0px;
+}
+
+.page {
+	max-width: 700px;
+	/* centering */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header {
+  float: right;
+  font-size: 80%;
+}
+
+.logo {
+  vertical-align: middle;
+}
+
+.title {
+  color: #000;
+}
+
+.left-column {
+  float: left;
+  width: 150px;
+  overflow: hidden;
+}
+
+.center-column {
+	margin-left: 170px;
+	margin-right: 0px;
+	color: #000;
+}
+
+.center-column.left-hidden {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.ustream-left-column {
+  float: left;
+  width: 480px;
+  overflow: hidden;
+}
+
+.ustream-right-column {
+  margin-left: 500px;
+  margin-right: 100px;
+}
+
+.video-container {
+  overflow: hidden;
+  z-index: 1;
+}
+
+.overlay-container {
+  position: absolute;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  font-size: 120%;
+  font-weight: bold;
+    color: #000080;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.buzz-nav {
+  float: right;
+}
+
+.buzz-title {
+	font-weight: bold;
+	font-size: 80%;
+	margin-bottom: 8px;
+	color: #000000;
+}
+
+.buzz {
+	font-size: 70%;
+	white-space: nowrap;
+	vertical-align: middle;
+	color: #000000;  
+}
+
+.buzz-icon {
+  margin-right: 4px;
+}
+
+.buzz-footer {
+  font-size: 70%;
+  margin-top: 8px;
+}
+
+.summary {
+}
+
+.query {
+	font-weight: bold;
+	color: #000000;
+}
+
+.result-container {
+  margin-left: 170px;
+    margin-right: 0px;
+  margin-top: 8px;
+  border-top: 1px solid silver;
+  overflow: hidden;
+}
+
+.result-container.left-hidden {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.result {
+  position: relative;
+}
+
+.result-message {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.status {
+  position: relative;
+  background-color: white;
+}
+
+.status-inner {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid silver;
+}
+
+.thumbnail {
+  float: left;
+}
+
+.thumbnail-img {
+  width: 48px;
+  height: 48px;
+  border: 0px;
+}
+
+.status-body {
+  margin-left: 54px;
+}
+
+.author {
+  font-weight: bold;
+  font-color:   color: #000080;
+}
+
+.meta {
+  font-size: 70%;
+  color: gray;
+}
+
+.meta a {
+  color: gray;
+}
+
+.entry-date {
+  color: gray;
+}
+
+.status-footer {
+  clear: left;
+}
+
+.error {
+  color: red;
+  border: 1px solid red;
+  padding: 8px;
+  background-color: #ffe0e0;
+  text-align: center;
+}
+
+.single-column {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.login-button {
+  border: 0px;
+}
+
+.footer {
+  float: right;
+  font-size: 80%;
+  margin-top: 8px;
+}
+.g {
+	color: #FF33CC;
+}
+.g2013 {
+	color: #FF33CC;
+}
+.g-font {
+	font-family: Arial, Helvetica, sans-serif;
+	  color: #000;
+}
+.g-pink {
+	color: #000;
+}
+.g-black {
+	color: #333;
+}

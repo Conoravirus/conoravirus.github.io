@@ -1,0 +1,48 @@
+#interContainer{
+	position: absolute;
+	width: 670px; /*Width of interstitial box*/
+	left: 0;
+	top: 0;
+	padding: 15px;
+	padding-top: 0;
+	background-color: #FF0099;
+	border: 1px solid black;
+	visibility: hidden;
+	z-index: 6;
+}
+
+#interContainer .headerbar{ /*CSS for header bar of interstitial box*/
+color: #FFF;
+padding: 5px 0;
+text-align: right;
+}
+
+#interContainer .headerbar a{ /*CSS for header bar links of interstitial box*/
+font-size: 120%;
+color: #FFF;
+text-decoration: none;
+}
+
+
+#interContent{ /*CSS for div that holds the content to show*/
+border: 1px solid #FFF;
+
+background-color: #FF0099;
+}
+
+#interVeil{ /*CSS for background veil that covers entire page while interstitial box is visible*/
+position: absolute;
+background: black url(blackdot.gif);
+right: 0;
+width: 10px;
+top: 0;
+z-index: 5;
+visibility: hidden;
+filter:progid:DXImageTransform.Microsoft.alpha(opacity=80);
+opacity: 0.8;
+}.g1 {
+	color: #000;
+}
+.g2 {
+	font-family: "Arial Black", Gadget, sans-serif;
+}

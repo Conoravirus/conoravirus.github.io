@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- For Android/iOS -->
+  <meta name="viewport" content="width=device-width">
+    <meta name="description" content="This is real time Twitter search using Twitter Streaming API.
+      New tweets are automatically shown in a few seconds after posting.">
+  <title>Tweet Search Stream</title>
+  <link href="css/default.css" rel="stylesheet" type="text/css">
+  <!--
+  <script type='text/javascript' 
+        src='http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js'></script>
+  -->
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript" src="http://gimite.net/js/jquery_create_element_tree.js"></script>
+  <script type="text/javascript" src="js/swfobject.js"></script>
+  <script type="text/javascript" src="js/web_socket.js"></script>
+  <script type="text/javascript">
+    var vars = {"query":"#coronavirus OR #china OR #virus OR #corona ","lang":"en","web_socket_url":"ws:\/\/tweet-search-stream.gimite.net:13000\/"};
+  </script>
+  <script type="text/javascript" src="js/search.js"></script>
+  <script type="text/javascript">
+    
+    google.setOnLoadCallback(onLoad);
+    
+    function onLoad() {
+      initialize();
+    }
+    
+  </script>
+</head><body>
+  
+  <div class="page">
+    
+    <div class="header">
+      <a href="/?hl=ja">
+          Twitter LIFE STREAM created by <a href="https://spaceg.github.io">Lucas Gatsas</a>
+      </a>
+    </div>
+    
+    <h1 class="center-column">
+      <a class="g-font" href="https://spaceg.github.io"><span class="g-pink"> REAL TIME TWITTER Conoravirus STREAM.<br>  FROM THE WORLD WIDE WEB.</span></a></h1>
+    
+    <form class="query-form center-column" action="/search" method="GET">
+        <p>
+            This is real time Twitter search using Twitter Streaming API.
+            New tweets are automatically shown in a few seconds after posting.
+            This is an experimental service Life Stream by Lucas Gatsas. The Search Machine dosen't work yet. Come Back Later Again.&lt;&lt;
+        </p>
+      <div>
+     <!-- Coming Soon  <input type="text" id="query-field" name="q" value="" size="30"
+          placeholder="#hashtag or keyword">
+        <input type="hidden" name="hl" value="en">
+        <input type="submit" value="Search">-->  
+      </div>
+    </form>
+    
+      <div class="summary center-column">
+        
+        <div>
+            Search result for <span class="query"><strong>#coronavirus</strong>  </span>
+          <span id="tps"></span>
+            /
+            <a href="https://twitter.com" id="show-update-link">
+              Tweet here  </a><!--
+              --><img src="tryon_side_by_side_left_arrow-9fb79564639041883b0653faa7d03229.png">
+          
+        </div>
+        
+          <div id="update" style="display: none;">
+              <form action="/login" method="POST">
+                <div>
+                    You can tweet in this page if you sign in with your Twitter account. Take #hashtag #conoravirus
+                    <a href="https://twitter.com" id="show-update-link">
+                      Login into Your Twitter Account  </a>
+                </div>
+                <div>
+               <!--  <input type="hidden" name="redirect" value="/?hl=en&amp;show_update=true">
+                  <input type="image" src="/images/sign-in-with-twitter-d.png"> -->  
+                </div>
+              </form>
+          </div>
+        
+      </div>
+    
+    <div class="container">
+      
+      <div id="left-column" class="left-column">
+        <div class="buzz-nav"><img id="close-left-button" src="twittericonsec.png" title="Hide hot words"></div>
+        <div class="buzz-title">
+            Hot hash tags
+        </div>
+        <div id="buzz" class="buzz">Loading...</div>
+        <div class="buzz-footer">
+          <div>Powered by <a href="http://github.com/spaceg" target="_blank">spaceg.github.io</a></div>
+          <div>Public  by <a href="http://spaceg.github.io" target="_blank">lucasgatsas.com</a></div>
+        </div>
+      </div>
+      
+        
+        <div id="error-bar" class="error center-column" style="display: none;">
+          <span id="error-message"></span>
+          <a href="#" id="retry-link">
+              Retry
+          </a>
+        </div>
+        
+        <div class="result-container">
+          <div id="result" class="result">
+            <div id="result-message" class="result-message">Loading...</div>
+          </div>
+        </div>
+        
+      
+    </div>
+    
+    <div class="footer">
+      Life Stream <a href="http://www.spaceg.github.io" target="_blank">Lucas Gatsas</a> 
+    </div>
+    
+  </div>
+  
+</body></html>
