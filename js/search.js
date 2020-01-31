@@ -353,8 +353,8 @@ function raiseEntry(targetEntry) {
 }
 
 function createView(entry) {
-  var url = "http://twitter.com/" + entry.user.screen_name + "/status/" + entry.id_str;
-  var userUrl = "http://twitter.com/" + entry.user.screen_name;
+  var url = "https://twitter.com/" + entry.user.screen_name + "/status/" + entry.id_str;
+  var userUrl = "https://twitter.com/" + entry.user.screen_name;
   struct =
     ["div", {className: "status", key: "statusDiv"},
       ["div", {className: "status-inner"},
